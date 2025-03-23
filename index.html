@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshika D - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        (function(){
+            emailjs.init("YOUR_USER_ID");
+        })();
+    </script>
+    
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900 bg-opacity-90 z-50 py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#home" class="text-2xl font-bold text-green-400">Harshika<span class="text-white">.dev</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-item active-nav">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 p-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center relative">
+        <div class="container mx-auto px-4 py-20 md:py-0">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h3 class="text-green-400 font-semibold mb-2">Hi, I am</h3>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Harshika D.</h1>
+                    <p class="text-gray-300 text-lg mb-8">I'm a Computer Science student at SRMIST with a passion for Machine Learning and Data Analytics.</p>
+                    <div class="flex space-x-4">
+                        <a href="#about" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md font-semibold transition duration-300">Show Profile</a>
+                        <a href="#projects" class="border border-green-500 hover:bg-green-500 hover:bg-opacity-20 text-white px-6 py-3 rounded-md font-semibold transition duration-300">Show Projects</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-green-400">
+                        <!-- Replace with your actual image -->
+                        <img src="Prof1.jpg" alt="Harshika D" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-green-400"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-2">About Me</h2>
+                <p class="text-gray-400">Get to know me better</p>
+                <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-gray-700 p-1 rounded-lg max-w-md mx-auto">
+                        <!-- Replace with your actual image -->
+                        <img src="Post.jpg" alt="Harshika D" class="w-full h-auto rounded-lg" />
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h3 class="text-2xl font-semibold mb-4">I'm Harshika, a Pre-final Year B.Tech Student</h3>
+                    <p class="text-gray-300 mb-6">
+                        I'm a pre-final year B.Tech student at SRM Institute of Science and Technology (SRMIST) with a CGPA of 9.29. I have a strong interest in Machine Learning and Data Analytics, focusing on extracting insights from data and building predictive models. Proficient in Java, I have a solid foundation in object-oriented programming and data structures. I enjoy working on real-world projects that apply machine learning to solve practical problems.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <p class="mb-2"><span class="font-semibold text-green-400">Name:</span> Harshika D</p>
+                            <p class="mb-2"><span class="font-semibold text-green-400">Email:</span> harshikareddy640@gmail.com</p>
+                            <p><span class="font-semibold text-green-400">Phone:</span> +91 7305429619</p>
+                        </div>
+                        <div>
+                            <p class="mb-2"><span class="font-semibold text-green-400">Education:</span> B.Tech in CSE</p>
+                            <p class="mb-2"><span class="font-semibold text-green-400">University:</span> SRMIST</p>
+                            <p><span class="font-semibold text-green-400">CGPA:</span> 9.29</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/harshika-reddy" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://x.com/harshikareddy19" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="mailto:harshikareddy640@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-2">Education</h2>
+                <p class="text-gray-400">My academic journey</p>
+                <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline -->
+                    <div class="absolute left-0 md:left-1/2 h-full w-1 bg-green-400 transform md:translate-x-0.5"></div>
+                    
+                    <!-- Education Items -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="flex md:w-1/2 md:justify-end mb-6 md:mb-0 md:pr-8">
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-lg md:text-right">
+                                    <h3 class="text-xl font-semibold text-green-400">B.Tech in Computer Science and Engineering</h3>
+                                    <p class="text-white mt-2">SRM Institute of Science Technology</p>
+                                    <p class="text-gray-400 mt-1">2022 - 2026</p>
+                                    <p class="mt-2">CGPA: 9.29</p>
+                                </div>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                                <div class="w-6 h-6 bg-green-400 rounded-full"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-8"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 md:pr-8"></div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                                <div class="w-6 h-6 bg-green-400 rounded-full"></div>
+                            </div>
+                            <div class="flex md:w-1/2 mb-6 md:mb-0 md:pl-8">
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-semibold text-green-400">Class 12</h3>
+                                    <p class="text-white mt-2">Devi Academy</p>
+                                    <p class="text-gray-400 mt-1">2022</p>
+                                    <p class="mt-2">Score: 76%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="flex md:w-1/2 md:justify-end mb-6 md:mb-0 md:pr-8">
+                                <div class="bg-gray-800 p-6 rounded-lg shadow-lg md:text-right">
+                                    <h3 class="text-xl font-semibold text-green-400">Class 10</h3>
+                                    <p class="text-white mt-2">Devi Academy</p>
+                                    <p class="text-gray-400 mt-1">2020</p>
+                                    <p class="mt-2">Score: 91%</p>
+                                </div>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                                <div class="w-6 h-6 bg-green-400 rounded-full"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-2">My Skills</h2>
+                <p class="text-gray-400">What I'm good at</p>
+                <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Technical Skills -->
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-400">Technical Skills</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Power BI & Tableau</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Streamlit</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-400">Computer Science & Soft Skills</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>OOP</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Data Structures</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>UI/UX Design</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Leadership</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Public Speaking</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-400 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-2">Experience</h2>
+                <p class="text-gray-400">My professional journey</p>
+                <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8 mb-8">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-green-400">Core Team Member</h3>
+                            <p class="text-xl">99th floor</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="bg-green-400 bg-opacity-20 text-green-400 py-1 px-3 rounded-full text-sm">June 2024 - Present</span>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Led a team of 20+ developers, coordinating efforts to streamline the development process and ensure a 20% faster feature delivery timeline.</li>
+                        <li>Contributed to the creation of features that boosted user engagement by 30% pre-launch through targeted feature development.</li>
+                        <li>Worked on data analytics for user engagement, analyzing demographic data (age, gender, etc.) and post performance to identify trends.</li>
+                        <li>Increased views for targeted content by 25% based on user preferences analysis.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-green-400">Leadership at CodeChef</h3>
+                            <p class="text-xl">Codekrafters (formerly CodeChef)</p>
+                        </div>
+                        <div class="mt-2 md:mt-0">
+                            <span class="bg-green-400 bg-opacity-20 text-green-400 py-1 px-3 rounded-full text-sm">Jan 2025 - Present</span>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2">
+                        <li>Promoted to Head of a technical domain after excelling as a team member and Lead.</li>
+                        <li>Currently leading 50+ members, managing technical teams to achieve organizational goals.</li>
+                        <li>Led a team of 20+ Volunteers to successfully organize a hackathon (Hackverse) with over 200 participants.</li>
+                        <li>Ensured seamless coordination, engaging events, and a high level of participant satisfaction.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-2">My Projects</h2>
+                <p class="text-gray-400">What I've worked on</p>
+                <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            
+            <!-- Project filter buttons -->
+            <div class="flex justify-center flex-wrap gap-4 mb-12">
+                <button class="filter-btn active bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium transition duration-300" data-filter="all">All</button>
+               
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-900 rounded-lg overflow-hidden shadow-lg" data-category="ml data">
+                    <div class="relative h-64 overflow-hidden">
+                        <!-- Replace with actual project image -->
+                        <img src="FISC.png" alt="Fiscallytic" class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-green-500 bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <a href="https://project-w23cojwxbalxahfwafplcw.streamlit.app/" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full font-medium">View Project</a>
+                            <a href="https://github.com/HarshikaReddy4/Project" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full font-medium">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fiscallytic: AI-Powered Financial Stability</h3>
+                        <p class="text-gray-300 mb-4">A machine learning-based financial classifier to categorize individuals into groups using DBSCAN clustering on 20,000+ records with 26 financial features.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Scikit-learn</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Streamlit</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-900 rounded-lg overflow-hidden shadow-lg" data-category="ml">
+                    <div class="relative h-64 overflow-hidden">
+                        <!-- Replace with actual project image -->
+                        <img src="sent.png" alt="Mealytics" class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-green-500 bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <a href="https://36kfvjxxkpxczptkiqp5dg.streamlit.app/#analysis-result" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full font-medium">View Project</a>
+                            <a href="https://github.com/HarshikaReddy4/rest" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-full font-medium">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Mealytics: AI-Powered Dining Intelligence</h3>
+                        <p class="text-gray-300 mb-4">An interactive sentiment analysis dashboard that processes customer reviews with 92% accuracy, enabling restaurant owners to identify key improvement areas.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">BERT</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">NLP</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-2">Certifications</h2>
+                <p class="text-gray-400">My continuous learning journey</p>
+                <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                    <div class="bg-green-400 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-certificate text-2xl text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Machine Learning A-Z</h3>
+                    <p class="text-gray-400 text-center">Udemy</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                    <div class="bg-green-400 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chart-bar text-2xl text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">Data Analysis SQL, Tableau & Power BI</h3>
+                    <p class="text-gray-400 text-center">Udemy</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                    <div class="bg-green-400 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-medal text-2xl text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-2">International Mathematics Olympiad</h3>
+                    <p class="text-gray-400 text-center">Rank 299</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-800">
+<div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-2">Contact Me</h2>
+        <p class="text-gray-400">Get in touch</p>
+        <div class="w-24 h-1 bg-green-400 mx-auto mt-4"></div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto bg-gray-900 rounded-lg shadow-lg p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-green-400">Contact Information</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-green-400 text-xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-medium">Location</h4>
+                            <p class="text-gray-300">Chennai, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-green-400 text-xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-medium">Email</h4>
+                            <p class="text-gray-300">harshikareddy640@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-phone text-green-400 text-xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-medium">Phone</h4>
+                            <p class="text-gray-300">+91 7305429619</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/harshika-reddy" target="_blank" class="social-icon w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://x.com/harshikareddy19" target="_blank" class="social-icon w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://github.com/HarshikaReddy4" target="_blank" class="social-icon w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-green-400">Send Me a Message</h3>
+                <form id="contact-form" onsubmit="sendEmail(event)">
+                    <div class="mb-4">
+                        <input type="text" name="from_name" placeholder="Your Name" class="w-full bg-gray-800 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="from_email" placeholder="Your Email" class="w-full bg-gray-800 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" name="subject" placeholder="Subject" class="w-full bg-gray-800 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+                    </div>
+                    <div class="mb-4">
+                        <textarea rows="5" name="message" placeholder="Your Message" class="w-full bg-gray-800 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 py-8">
+<div class="container mx-auto px-4">
+    <div class="text-center">
+        <p>&copy; 2025 Harshika D. All rights reserved.</p>
+        <p class="text-gray-400 mt-2">Designed and developed with <i class="fas fa-heart text-green-400"></i></p>
+    </div>
+</div>
+</footer>
+
+
+<!-- Mobile menu toggle script -->
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+});
+
+function sendEmail(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', '#contact-form')
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Message sent successfully!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Failed to send message. Please try again later.');
+            });
+    }
+
+// Active navigation link
+const navLinks = document.querySelectorAll('.nav-item');
+const sections = document.querySelectorAll('section');
